@@ -1,10 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
-  {{- .Values.customblock.author.name}}
-  {{- "Values from Charts"}}
-  {{- .Chart.apiVersion}}
-  {{- .Chart.keywords}}
-  {{- .Chart.maintainers.email}}
+  {{.Values.customblock.author.name}}
+  {{.Values.customblock.author.address}}
+  {{.Values.customblock.author.email | default "I am null" | upper }}
 metadata:
   name: {{ include "fstcht.fullname" . }}
   labels:

@@ -10,6 +10,9 @@ customblock:
       - "Juan"
       - "Camela"
       - "Julia"
+    address: "Pune India"
+    email:
+
 replicaCount: 2
 
 image:
