@@ -1,6 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
-  {{"Hi, we are testing - "}}, {{"HELM"}}
+  {{- .Values.customblock.author.name}}
+  {{- "Values from Charts"}}
+  {{- .Chart.apiVersion}}
+  {{- .Chart.keywords}}
+  {{- .Chart.maintainers}}
 metadata:
   name: {{ include "fstcht.fullname" . }}
   labels:
