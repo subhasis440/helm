@@ -1,5 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
+  {{"Hi, we are testing - "}}, {{"HELM"}}
 metadata:
   name: {{ include "fstcht.fullname" . }}
   labels:

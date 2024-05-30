@@ -1,8 +1,16 @@
 # Default values for fstcht.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-
-replicaCount: 3
+customblock:
+  author:
+    name:
+      - "Edward"
+      - "Peter"
+      - "Mark"
+      - "Juan"
+      - "Camela"
+      - "Julia"
+replicaCount: 2
 
 image:
   repository: nginx
