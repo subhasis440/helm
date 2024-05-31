@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
   {{.Values.customblock.author.name}}
-  {{.Values.customblock.author.address}}
-  {{.Values.customblock.author.email | default "I am null" | upper }}
+  {{.Values.customblock.author.address | nindent 2 }}
+  {{.Values.customblock.author.email | default "I am null" | upper | nindent 4 }}
 metadata:
   name: {{ include "fstcht.fullname" . }}
   labels:
