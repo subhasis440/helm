@@ -1,8 +1,5 @@
 apiVersion: apps/v1
-kind: Deployment
-  {{- if .Values.customblock.author.name}}
-  {{"Custome value here" | nindent 4 }} 
-  {{- end }}  
+kind: Deployment 
 metadata:
   name: {{ include "fstcht.fullname" . }}
   labels:
