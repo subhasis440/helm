@@ -1,5 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment 
+  {{- with .Values.customblock.author.name}}
+  {{- toYaml . | nindent 6 }}
+  {{- end }}
 metadata:
   name: {{ include "fstcht.fullname" . }}
   labels:
